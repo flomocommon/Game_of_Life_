@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-const axios       = require('axios');
-const { prompt }  = require('inquirer');
-const { navigate }= require('./util');
-const program     = require('commander');
-const chalk       = require('chalk');
-const clear       = require('clear');
-const figlet      = require('figlet');
+const axios        = require('axios');
+const { prompt }   = require('inquirer');
+const { navigate } = require('./util');
+const program      = require('commander');
+const chalk        = require('chalk');
+const clear        = require('clear');
+const figlet       = require('figlet');
 
 clear();
 console.log(

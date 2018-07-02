@@ -1,3 +1,6 @@
+const chalk  = require('chalk');
+const figlet = require('figlet');
+
 let hp = 5;
 let score = 0;
 const visitedRooms = [{ x:0, y:0 } ];
@@ -25,11 +28,11 @@ const getRoomValue = () => {
   const outcome = Math.round((Math.random()));
   if (outcome === 0) {
     hp -= 1;
-    let msg = 'You have encountered a monster and fought bravely! MONSTER!'
+    let msg = `You have encountered a monster and fought bravely! \n ${chalk.red(figlet.textSync('Monster', { horizontalLayout: 'full' }))}`
     return hp === 0 ? exitGame() : msg
   } else {
     score +=1;
-    return 'Traveller, you have discovered some gold! GOLD!';
+    return `Traveller, you have discovered some gold! \n ${chalk.yellow(figlet.textSync('GOLD', { horizontalLayout: 'full' }))}`;
   }
 };
 
