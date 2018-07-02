@@ -1,0 +1,25 @@
+{
+  "name": "gol",
+  "version": "1.0.0",
+  "description": "console dungeon game",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "gol": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pamela Yang",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "commander": "^2.15.1",
+    "express": "^4.16.3",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
